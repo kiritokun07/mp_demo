@@ -47,7 +47,7 @@ public class TestController {
         LambdaQueryChainWrapper<MpDemo> queryChainWrapper = ChainWrappers.lambdaQueryChain(mpDemoMapper)
                 .select(MpDemo::getId, MpDemo::getName)
                 .eq(MpDemo::getDataStatus, 0);
-        Integer count = queryChainWrapper.count();
+        Long count = queryChainWrapper.count();
         System.out.println("count = " + count);
         List<MpDemo> demoList = queryChainWrapper.list();
         demoList.forEach(System.out::println);
