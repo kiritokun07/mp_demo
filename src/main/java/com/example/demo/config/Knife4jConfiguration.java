@@ -60,7 +60,7 @@ public class Knife4jConfiguration {
         return new ApiInfoBuilder()
                 .title("xx")
                 .description("https://www.baidu.com/")
-                .termsOfServiceUrl("xx")
+                .termsOfServiceUrl("count查询报错测试")
                 .contact(new Contact("kirito", "url", "kiritokun@qq.com"))
                 .version("0.1")
                 .build();
